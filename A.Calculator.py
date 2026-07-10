@@ -78,14 +78,14 @@ def load ( ) :
 ### بخش اصلی و مربوط به قسمت های اجرایی توابع ###
 load ()
 while True :
-    choice = input ( "please choice the operation you wish to perform and Enter \help to display operations: " )
-    if choice == "\help":
-        print ( "+ for Addition \n - for  subtraction \n * for multiplication \n / for division and // for remaining division \n ^ for power \n ** for square root \n || for absolute value \n % for percentage  \n \exit for to close app \n \clear history for clear history" )
-    elif choice == "\clear history" :
+    choice = input ( "please choice the operation you wish to perform and Enter help to display operations: " )
+    if choice == "help":
+        print ( "+ for Addition \n - for  subtraction \n * for multiplication \n / for division and // for remaining division \n ^ for power \n ** for square root \n || for absolute value \n % for percentage  \n exit for to close app \n clear history for clear history" )
+    elif choice == "clear history" :
         with open ( "history.json" , "w" ) :
             pass
         print ( "clear history successful" )
-    elif choice == "\exit" :
+    elif choice == "exit" :
         print ( " exit successful" )
         break
     elif choice == "+" :
